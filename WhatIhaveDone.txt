@@ -92,14 +92,14 @@ Part|||
    $ git push -u origin patch2
 
 4) $ edit "main.cpp"
-    int main(int argc, char** argv){
+    int main(){
        string name; \\ .....
        std::cin >> name; \\ Ввод данных
        std::cout << "Hello world from " << name << std::endl;
     }
 
-6) $ git pull origin master
-   $ git rebase master
+6) $ git pull origin main
+   $ git rebase main
    $ edit "Hello world.cpp"
    $ git commit -a -m "Update Hello world.cpp"
    $ git rebase --continue
